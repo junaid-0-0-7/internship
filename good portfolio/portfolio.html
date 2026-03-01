@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <div class="background-animation" id="bgAnimation"></div>
+
+    <header id="header">
+        <nav>
+            <div class="logo">&lt;Dev/&gt;</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h3>Hello, I'm</h3>
+                <h1>JUNAID</h1>
+                <h2>Web Developer</h2>
+                <p>I craft beautiful, functional, and user-friendly websites that bring ideas to life. Specializing in modern web technologies and creating exceptional digital experiences.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-dot dot-red"></div>
+                        <div class="window-dot dot-yellow"></div>
+                        <div class="window-dot dot-green"></div>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line"><span class="keyword">const</span> <span class="function">developer</span> = {</div>
+                        <div class="code-line">  name: <span class="string">'Junaid'</span>,</div>
+                        <div class="code-line">  skills: [<span class="string">'HTML'</span>, <span class="string">'CSS'</span>, <span class="string">'JS'</span>,
+                            <span class="string">'Nodejs'</span>,<span class="string">'MongoDb'</span>,<span class="string">'Express'</span>,
+                            <span class="string">'Nextjs'</span>,<span class="string">'React'</span>,<span class="string">'Supabase'</span>,],</div>
+                        <div class="code-line">  passion: <span class="string">'Building Amazing Websites which look clean and are functional'</span></div>
+                        <div class="code-line">};</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-title">
+            <h2>About Me</h2>
+            <p>Get to know me better</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a passionate web developer with a keen eye for design and a love for creating seamless digital experiences. With expertise in modern web technologies, I transform ideas into reality through clean, efficient code.</p>
+                <p>My approach combines technical excellence with creative problem-solving, ensuring every project not only meets but exceeds expectations. I stay current with the latest industry trends and best practices to deliver cutting-edge solutions.</p>
+                <p>When I'm not coding, you'll find me exploring new technologies or sharing knowledge with the developer community.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-card">
+                    <h3>10+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-card">
+                    <h3>100%</h3>
+                    <p>Client Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-title">
+            <h2>My Skills</h2>
+            <p>Technologies I work with</p>
+        </div>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Frontend Development</h3>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>HTML5</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="95"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>CSS3</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <span>88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="88"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>React.js</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Backend Development</h3>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Node.js</span>
+                        <span>82%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="82"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Express.js</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>MongoDB</span>
+                        <span>78%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="78"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>REST APIs</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Tools & Others</h3>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Git & GitHub</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Responsive Design</span>
+                        <span>92%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="92"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>UI/UX Design</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Webpack/Vite</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="70"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-title">
+            <h2>My Projects</h2>
+            <p>Recent work I'm proud of</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">🌐</div>
+                <div class="project-content">
+                    <h3>E-Commerce Platform</h3>
+                    <p>A fully responsive e-commerce website with shopping cart, payment integration, and admin dashboard.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#">View Demo →</a>
+                        <a href="#">GitHub →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">📱</div>
+                <div class="project-content">
+                    <h3>Social Media Dashboard</h3>
+                    <p>Real-time analytics dashboard with data visualization and user engagement metrics.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Chart.js</span>
+                        <span class="tag">CSS3</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#">View Demo →</a>
+                        <a href="#">GitHub →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🎨</div>
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>Modern portfolio template with smooth animations, dark mode, and contact form integration.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#">View Demo →</a>
+                        <a href="#">GitHub →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🔐</div>
+                <div class="project-content">
+                    <h3>Task Management App</h3>
+                    <p>Collaborative task manager with real-time updates, team features, and progress tracking.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">Tailwind</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#">View Demo →</a>
+                        <a href="#">GitHub →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🎬</div>
+                <div class="project-content">
+                    <h3>Movie Streaming App</h3>
+                    <p>Netflix-style streaming platform with user authentication, search, and favorites system.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">API</span>
+                        <span class="tag">Redux</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#">View Demo →</a>
+                        <a href="#">GitHub →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">☁️</div>
+                <div class="project-content">
+                    <h3>Weather Dashboard</h3>
+                    <p>Real-time weather application with forecasts, maps, and location-based services.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">API</span>
+                        <span class="tag">CSS3</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#">View Demo →</a>
+                        <a href="#">GitHub →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="resume">
+        <div class="section-title">
+            <h2>Resume</h2>
+            <p>Download my professional resume</p>
+        </div>
+        <div class="resume-content">
+            <h3>📄 My Professional Journey</h3>
+            <p>Download my resume to learn more about my experience, education, and achievements in web development.</p>
+            <a href="#" class="btn btn-primary" download>Download Resume (PDF)</a>
+        </div>
+    </section>
+
+   
+    <section id="contact">
+        <div class="section-title">
+            <h2>Get In Touch</h2>
+            <p>Let's work together</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p>junaid.0778694@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-details">
+                        <h4>Location</h4>
+                        <p>Bangalore, India</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">💼</div>
+                    <div class="contact-details">
+                        <h4>Availability</h4>
+                        <p>Open for freelance projects</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+       
+        <p>thank you for viewing my website.<br>
+            &copy; 2026 Your Name. All rights reserved. Built with ❤️ and code by junaid. 
+          
+        </p>
+    </footer>
+
+   <script src="porfolio.js" ></script>
+</body>
+</html>
