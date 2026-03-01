@@ -1,0 +1,247 @@
+.job-detail-page {
+  min-height: calc(100vh - 300px);
+  padding: 4rem 2rem;
+  background: var(--bg-primary);
+}
+
+.job-detail-container {
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.btn-back {
+  padding: 0.8rem 1.5rem;
+  background: transparent;
+  border: 2px solid var(--border-color);
+  color: var(--text-secondary);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-back:hover {
+  border-color: var(--accent-secondary);
+  color: var(--accent-secondary);
+  transform: translateX(-5px);
+}
+
+.job-detail-header {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--border-color);
+  position: relative;
+}
+
+.featured-badge-large {
+  display: inline-block;
+  background: var(--accent-tertiary);
+  color: var(--bg-primary);
+  padding: 0.5rem 1.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+  animation: pulse 2s infinite;
+}
+
+.job-detail-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.job-detail-company-info {
+  margin-top: 1rem;
+}
+
+.job-detail-company {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.job-detail-location {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.job-detail-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  margin-bottom: 3rem;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.meta-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.meta-value {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.job-detail-tags {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.detail-tag {
+  padding: 0.5rem 1.2rem;
+  background: rgba(255, 51, 102, 0.1);
+  border: 2px solid var(--accent-primary);
+  color: var(--accent-primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.job-detail-content {
+  margin-bottom: 3rem;
+}
+
+.content-section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: var(--bg-secondary);
+  border-left: 4px solid var(--accent-primary);
+}
+
+.section-heading {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section-text {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.section-text p {
+  margin-bottom: 1rem;
+}
+
+.requirements-list {
+  list-style: none;
+  padding: 0;
+}
+
+.requirements-list li {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.8;
+  padding: 0.8rem 0;
+  padding-left: 2rem;
+  position: relative;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.requirements-list li:last-child {
+  border-bottom: none;
+}
+
+.requirements-list li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--accent-secondary);
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+.job-detail-footer {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.btn-apply-large {
+  padding: 1.5rem 4rem;
+  background: var(--accent-primary);
+  border: none;
+  color: var(--text-primary);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-apply-large::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--accent-secondary);
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.btn-apply-large:hover::before {
+  left: 0;
+}
+
+.btn-apply-large:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px var(--shadow);
+}
+
+@media (max-width: 768px) {
+  .job-detail-title {
+    font-size: 2rem;
+  }
+
+  .job-detail-meta {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .btn-apply-large {
+    width: 100%;
+    padding: 1.2rem 2rem;
+  }
+}
